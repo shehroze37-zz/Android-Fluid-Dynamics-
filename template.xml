@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/footerbg"
+    tools:context=".HomePageActivity" >
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/headershadow"
+            android:gravity="center_vertical|center_horizontal" >
+
+            <TextView
+                android:id="@+id/title_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/title_app_name"
+                android:textSize="20dip" />
+
+        </LinearLayout>
+        
+        <View
+        android:layout_above="@+id/mainFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/dropshadow"
+        >
+    </View>
+
+        <RelativeLayout
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/mainFooter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/header"
+            android:background="@color/main_bg_color" >
+
+            
+  	
+		    
+            
+        </RelativeLayout>	
+        
+        
+        
+
+    
+
+</RelativeLayout>
