@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FluidDynamicsApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button_start">Start</string>
+    <string name="button_help">Help</string>
+    <string name="button_settings">Settings</string>
+    <string name="button_about">About</string>
+    <string name="button_home">Home</string>
+    <string name="title_app_name">Fluid Dynamics</string>
+    <string name="view_normal">Normal</string>
+    <string name="view_thin">Thin</string>
+    <string name="view_thick">Thick</string>
+    <string name="title_activity_start_page">StartPage</string>
+    <string name="title_activity_normal">Normal</string>
+
+</resources>
