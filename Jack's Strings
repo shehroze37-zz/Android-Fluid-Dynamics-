@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_screen">Thick.</string>
+    <string name="info_screen">Info.</string>
+    <string name="help_screen">Help.</string>
+    <string name="help_instructions">\n1) Hold device and prepared drink side by side\n\n2)Tilt device and the drink side by side to compare the effects of sideways movement\n\n3) If you find your liquid reacts slower to movement you must dilute as it is too thick\n\n4)If your drink reacts too fast to movement you must add more thickener.\n\n5) Swipe left and right to see examples of over and under-thickened liquid.\n\n6) You can cahnge the colour of the liquid by selecting a colour in the scroll down bar at the top of the main screen.\n\n7) More information about the app can be found under the `Info` tab. </string>
+    <string name="about_information">\n|| Dysphagia is a term used to describe difficulty in swallowing. Roughly, 1 in every 17 people suffer from Dysphagia in differing severities and so too do 45% of over 75s.\n\n|| These problems are normally managed by texture Modification of the diet, including adding some sort of thickener to drinks.\n\n|| The reason for the creation of this app is to provide a virtual simualation of correctly thickened liquid. It was brought to our attention that current guidelines for thickening drinks are too vague.\n\n|| Feedback from patients and medical staff suggests an OPTIMAL thickness level should be identified and illustrated by means of virtual comparison.\n\n|| Using fluid dynamics and features of mobile devices it is now easy to compare the optimal level of thickness with a real sample. Read the help page for more information on how to use the app.    </string>
+    <string name="homeButton_Label">Home.</string>
+    <string name="settingsButton_Label">Setting. </string>
+    <string name="infoButton_Label">Setting. </string>
+        
+</resources>
