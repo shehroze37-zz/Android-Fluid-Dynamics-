@@ -1,0 +1,83 @@
+package com.comp1008.popupdialog.jackshipway;
+
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.Toast;
+import android.view.View;
+import android.view.View.OnClickListener;
+
+public class MainActivity extends Activity implements OnClickListener{
+
+  private Button mButton1;
+	private Button mButton2;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+		mButton1 = (Button) findViewById(R.id.button1);
+		mButton1.setOnClickListener(this);	
+		mButton2 = (Button) findViewById(R.id.button2);
+		mButton2.setOnClickListener(this);
+	}
+
+	public void onClick(View view) {
+		switch (view.getId()){
+		case R.id.button1:
+			exitDialog();
+			break;
+		case R.id.button2:
+			changeColourDialog();
+		}
+		
+	}
+	
+	private void exitDialog(){
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("Are You Sure You Want To Exit?");
+		builder.setMessage("I Hope That Was Useful!");
+		builder.setIcon(R.drawable.ic_dialog_alert);
+		builder.setPositiveButton("Ok", new DialogInterface.OnClickListener(){
+		public void onClick(DialogInterface dialog, int which) {
+			Toast.makeText(getApplicationContext(),  "Ok Clicked",  Toast.LENGTH_SHORT).show();
+			}
+       
+		});
+		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
+			public void onClick(DialogInterface dialog, int which) {
+				Toast.makeText(getApplicationContext(),  "Cancelled",  Toast.LENGTH_SHORT).show();
+				}
+	       
+		});
+				AlertDialog alertDialog = builder.create();
+				alertDialog.show();
+	}
+
+	
+	private void changeColourDialog(){
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("Choose A Colour.");
+		builder.setMessage("Pick A Nice One!");
+		builder.setIcon(R.drawable.ic_menu_edit);
+		builder.setPositiveButton("Ok", new DialogInterface.OnClickListener(){
+		public void onClick(DialogInterface dialog, int which) {
+			Toast.makeText(getApplicationContext(),  "Colour Changed To <COLOUR>",  Toast.LENGTH_SHORT).show();
+			}
+       
+		});
+		builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener(){
+			public void onClick(DialogInterface dialog, int which) {
+				Toast.makeText(getApplicationContext(),  "You Clicked Cancel",  Toast.LENGTH_SHORT).show();
+				}
+	       
+		});
+				AlertDialog alertDialog = builder.create();
+				alertDialog.show();
+	}
+	
+	
+}
+
